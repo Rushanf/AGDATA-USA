@@ -1,0 +1,44 @@
+<h1 class="text-center" style="text-align:center; margin-top : 20px">Contact List</h1>
+<div class="container mt-5">
+  <div class="row justify-content-center mb-3">
+    <div class="col-auto">
+      <button mat-raised-button color="primary" (click)="openDialog()">Add New Contact</button>
+    </div>    
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-auto">
+      <table mat-table [dataSource]="contacts" class="mat-elevation-z8">
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef> Id </th>
+          <td mat-cell *matCellDef="let contact"> {{contact.id}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> Name </th>
+          <td mat-cell *matCellDef="let contact"> {{contact.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="address">
+          <th mat-header-cell *matHeaderCellDef> Address </th>
+          <td mat-cell *matCellDef="let contact"> {{contact.address}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="actions">
+          <th mat-header-cell *matHeaderCellDef> Actions </th>
+          <td mat-cell *matCellDef="let contact">
+            <button mat-icon-button color="primary" (click)="editContact(contact)">
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button color="warn" (click)="deleteContact(contact.id)">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+      <mat-paginator [pageSizeOptions]="[10, 20]" showFirstLastButtons></mat-paginator>
+    </div>
+  </div>
+</div>

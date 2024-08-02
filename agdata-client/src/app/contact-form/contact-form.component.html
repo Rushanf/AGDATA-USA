@@ -1,0 +1,29 @@
+<div mat-dialog-content>
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <h1 mat-dialog-title>{{ data ? 'Edit Contact' : 'Add New Contact' }}</h1>
+    <div class="form-group">
+      <mat-form-field class="full-width">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name" />
+        <mat-error *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+          Name is required.
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="form-group">
+      <mat-form-field class="full-width">
+        <mat-label>Address</mat-label>
+        <input matInput formControlName="address" />
+        <mat-error *ngIf="contactForm.get('address')?.invalid && contactForm.get('address')?.touched">
+          Address is required.
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div mat-dialog-actions>
+      <button mat-button mat-dialog-close>Cancel</button>
+      <button mat-raised-button color="primary" type="submit" [disabled]="contactForm?.invalid">
+        {{ data ? 'Save' : 'Add' }}
+      </button>
+    </div>
+  </form>
+</div>

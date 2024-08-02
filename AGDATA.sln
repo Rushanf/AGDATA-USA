@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AGDATA.API", "AGDATA.API\AGDATA.API.csproj", "{68F5970D-B0ED-4CE8-93F4-84BA2217433A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "server", "server", "{95EAD253-DDDE-4016-9AC7-3C5AECC0EF20}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "client", "client", "{554A4F70-B67B-410F-80AF-4C30DBEADBB4}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "agdata-client", "agdata-client\", "{5090877F-8EDF-4B67-925A-3A8012EF5D0C}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_59549"
+		Debug.AspNetCompiler.PhysicalPath = "agdata-client\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59549\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_59549"
+		Release.AspNetCompiler.PhysicalPath = "agdata-client\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59549\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "59549"
+		SlnRelativePath = "agdata-client\"
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AGDATA.BL", "AGDATA.BL\AGDATA.BL.csproj", "{B14CAE66-D371-4826-A196-E4735BC181E1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AGDATA.Common", "AGDATA.Models\AGDATA.Common.csproj", "{D3FBDAED-562E-4515-A469-2770ABE6AB0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AGDATA.DAL", "AGDATA.DAL\AGDATA.DAL.csproj", "{9C6DE7C7-C5D6-470D-AB3A-4CC5FF32523A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68F5970D-B0ED-4CE8-93F4-84BA2217433A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F5970D-B0ED-4CE8-93F4-84BA2217433A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F5970D-B0ED-4CE8-93F4-84BA2217433A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F5970D-B0ED-4CE8-93F4-84BA2217433A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5090877F-8EDF-4B67-925A-3A8012EF5D0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5090877F-8EDF-4B67-925A-3A8012EF5D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5090877F-8EDF-4B67-925A-3A8012EF5D0C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{5090877F-8EDF-4B67-925A-3A8012EF5D0C}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{B14CAE66-D371-4826-A196-E4735BC181E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B14CAE66-D371-4826-A196-E4735BC181E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B14CAE66-D371-4826-A196-E4735BC181E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B14CAE66-D371-4826-A196-E4735BC181E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3FBDAED-562E-4515-A469-2770ABE6AB0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3FBDAED-562E-4515-A469-2770ABE6AB0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3FBDAED-562E-4515-A469-2770ABE6AB0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3FBDAED-562E-4515-A469-2770ABE6AB0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C6DE7C7-C5D6-470D-AB3A-4CC5FF32523A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C6DE7C7-C5D6-470D-AB3A-4CC5FF32523A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C6DE7C7-C5D6-470D-AB3A-4CC5FF32523A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C6DE7C7-C5D6-470D-AB3A-4CC5FF32523A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{68F5970D-B0ED-4CE8-93F4-84BA2217433A} = {95EAD253-DDDE-4016-9AC7-3C5AECC0EF20}
+		{5090877F-8EDF-4B67-925A-3A8012EF5D0C} = {554A4F70-B67B-410F-80AF-4C30DBEADBB4}
+		{B14CAE66-D371-4826-A196-E4735BC181E1} = {95EAD253-DDDE-4016-9AC7-3C5AECC0EF20}
+		{D3FBDAED-562E-4515-A469-2770ABE6AB0D} = {95EAD253-DDDE-4016-9AC7-3C5AECC0EF20}
+		{9C6DE7C7-C5D6-470D-AB3A-4CC5FF32523A} = {95EAD253-DDDE-4016-9AC7-3C5AECC0EF20}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {421E23BE-D00B-4F32-88E2-23D8B11D69DD}
+	EndGlobalSection
+EndGlobal
